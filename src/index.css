@@ -300,6 +300,7 @@ h1, h2, h3, h4, h5, h6 {
   .controls-bar {
     width: 100%;
     max-width: 210mm;
+  }
 }
 
 /* Cursor Glow Effect */
@@ -309,7 +310,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.8) 0%, rgba(236, 72, 153, 0.6) 30%, rgba(255,255,255,0) 70%);
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.2) 0%, rgba(236, 72, 153, 0.15) 30%, rgba(255,255,255,0) 70%);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
