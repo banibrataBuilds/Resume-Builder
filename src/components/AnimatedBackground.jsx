@@ -111,7 +111,7 @@ const AnimatedBackground = () => {
         let y = (Math.random() * ((canvas.height - size * 2) - (size * 2)) + size * 2);
         let directionX = (Math.random() * 2) - 1;
         let directionY = (Math.random() * 2) - 1;
-        let color = 'rgba(255, 255, 255, 0.7)'; // White particles to match glass theme
+        let color = 'rgba(99, 102, 241, 0.5)'; // Indigo particles to be visible on light theme
         
         particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
       }
@@ -125,7 +125,7 @@ const AnimatedBackground = () => {
             + ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
           if (distance < (canvas.width / 7) * (canvas.height / 7)) {
             opacityValue = 1 - (distance / 20000);
-            ctx.strokeStyle = `rgba(255, 255, 255, ${opacityValue})`;
+            ctx.strokeStyle = `rgba(99, 102, 241, ${opacityValue * 0.4})`;
             ctx.lineWidth = 1;
             ctx.beginPath();
             ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
